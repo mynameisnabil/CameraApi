@@ -4,11 +4,11 @@ plugins {
 
 android {
     namespace 'com.example.cameralibrary'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         minSdk 19
-        targetSdk 33
+        targetSdk 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -28,10 +28,11 @@ android {
 
 dependencies {
 
-//    zxing 3.3.1
+    // zxing 3.3.1
     implementation('me.dm7.barcodescanner:zxing:1.9.8') {
         exclude group: 'com.android.support'
     }
+
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     testImplementation 'junit:junit:4.13.2'
